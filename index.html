@@ -103,6 +103,7 @@ section[id] { scroll-margin-top: 60px; }
 .project img { width: 100%; border-radius: 6px; margin-bottom: 14px; display: block; }
 .tag-small { display: inline-block; font-size: .75rem; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
 .link { background: none; border: none; color: var(--blue); font-weight: 600; cursor: pointer; margin-top: 12px; font-size: .95rem; font-family: inherit; }
+a.link { display: inline-block; }
 .link:hover { text-decoration: underline; }
 
 /* Compétences */
@@ -127,6 +128,12 @@ section[id] { scroll-margin-top: 60px; }
 .modal-box { background: var(--gray-100); border-radius: 8px; padding: 28px; max-width: 520px; width: 100%; border-top: 4px solid var(--blue); }
 .modal-box h3 { color: var(--blue); margin-bottom: 4px; }
 .modal-box p { margin-bottom: 14px; color: var(--gray-600); }
+
+
+
+
+
+
 
 
 
@@ -314,6 +321,12 @@ body { overflow-x: hidden; }
     
     
     
+    
+    
+    
+    
+    
+    
     <div class="container hero-inner">
       <div class="hero-text">
         <p class="badge"><span class="dot"></span>Disponible pour Stage / PFA</p>
@@ -335,6 +348,12 @@ body { overflow-x: hidden; }
 
   <section id="about" class="section">
     <!--deco--><svg class="deco tr" width="320" height="170" viewBox="0 0 320 170" style="right:0;top:30px" aria-hidden="true"><path d="M320 40H170L130 80H20"/><path d="M320 120H230L200 150H100"/><circle cx="20" cy="80" r="5"/><circle cx="100" cy="150" r="5"/></svg><!--/deco-->
+    
+    
+    
+    
+    
+    
     
     
     
@@ -489,11 +508,11 @@ body { overflow-x: hidden; }
       <h2 class="title">Projets</h2>
       <div class="cards three">
         <article class="card project">
-          <img src="https://placehold.co/600x400/d1d5db/2563eb?text=Robot+Mobile" alt="Robot mobile autonome">
+          <img src="https://placehold.co/600x400/d1d5db/2563eb?text=Robot+Mobile" alt="SportLineBot">
           <span class="tag-small">Robotique</span>
-          <h3>Robot mobile d'exploration autonome</h3>
-          <p>Robot différentiel équipé d'un LIDAR 2D et d'un ESP32 pour la cartographie et l'évitement d'obstacles.</p>
-          <button class="link" data-modal="m1">Voir le détail</button>
+          <h3>SportLineBot</h3>
+          <p>Le robot qui trace les terrains de sport tout seul — piloté en WiFi, corrigé par gyroscope, supervisé par deux IA locales.</p>
+          <a class="link" href="sportlinebot.html">Voir le détail</a>
         </article>
         <article class="card project">
           <img src="https://placehold.co/600x400/d1d5db/2563eb?text=Station+IoT" alt="Station IoT">
@@ -579,7 +598,6 @@ body { overflow-x: hidden; }
   <div class="container">© 2026 Abdelaaziz AIT KHERI · Élève ingénieur en génie mécatronique</div>
 </footer>
 
-<div class="modal" id="m1"><div class="modal-box"><h3>Robot mobile d'exploration autonome</h3><p class="muted">Robotique &amp; ROS</p><p>Plateforme robotique mobile à roues différentielles. Le robot embarque un capteur LIDAR pour générer la carte 2D de la pièce et éviter les obstacles en temps réel via un algorithme SLAM exécuté sur un ESP32 / Raspberry Pi.</p><button class="btn btn-primary close">Fermer</button></div></div>
 <div class="modal" id="m2"><div class="modal-box"><h3>Station de télémesure &amp; contrôle IoT</h3><p class="muted">Systèmes embarqués &amp; Cloud</p><p>Nœud d'acquisition industriel basé sur ESP32. Les données des capteurs de courant et de vibration sont envoyées vers un serveur MQTT sécurisé, permettant la maintenance prédictive des équipements.</p><button class="btn btn-primary close">Fermer</button></div></div>
 <div class="modal" id="m3"><div class="modal-box"><h3>Bras manipulateur 4 axes</h3><p class="muted">CAO &amp; Cinématique</p><p>Conception des pièces mécaniques en alliage d'aluminium sous SolidWorks. Analyse des déformations sous charge (FEA) et modèle cinématique direct et inverse sous MATLAB.</p><button class="btn btn-primary close">Fermer</button></div></div>
 
